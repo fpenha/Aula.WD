@@ -1,0 +1,14 @@
+
+body {
+	margin: 0;
+}
+
+header {
+	border: 1px solid gray; 
+	height: 100px;
+}
+
+header div {
+	border: 1px solid gray; 
+	height: 50%;
+}
