@@ -1,3 +1,43 @@
+/*
+
+BOX MODEL 
+
+
+
+POSITION
+
+Para a propriedade position, é possível atribuir 5 valores, que são: 
+	1.static, 2.fixed, 3.sticky, 4.relative e 5.absolute.
+
+Alterando o Position, aparecem quatro propriedades auxiliares: 
+	1.top, 2.bottom, 3.left e 4.right
+
+As referências de topo, inferior, esquerda e direita podem mudar 
+dependendo do tipo de position aplicado.
+
+1.static: 
+- o elemento está posicionado em relação ao documento
+- não aceita as propriedades auxiliares top, bottom, left e right
+
+2.fixed:
+- o elemento está posicionado em relação a tela
+
+3.sticky:
+- o elemento está posicionado em relação a barra de rolagem
+
+4.relative:
+- o elemento está posicionado em relação a si
+
+5.absolute:
+- quando o pai for diferente de static, o mesmo será a referencia. 
+- diferente disso, o elemento terá como referencia o documento.
+
+
+*/
+
+* {
+	box-sizing: border-box;
+}
 
 body {
 	margin: 0;
@@ -6,9 +46,29 @@ body {
 header {
 	border: 1px solid gray; 
 	height: 100px;
+	position: relative;
 }
 
 header div {
 	border: 1px solid gray; 
-	height: 50%;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 30%;
+}
+
+header nav {
+	border: 1px solid green;
+	height: 30%;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+}
+
+header img {
+	margin: 0 auto 0 auto;
+	display: block;
+	max-height:90px;
+	width: auto;
+    height: auto;
 }
